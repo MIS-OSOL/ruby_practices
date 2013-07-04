@@ -8,11 +8,11 @@ print "数値を入力してください:"
 num = gets.chop
 unless num =~ /\D/
   (1..num.to_i).each do |i|
-    str = i
-    str = "Fizz" if i % 3 == 0
-    str = "Buzz" if i % 5 == 0
-    str = "Fizz Buzz" if i % 3 == 0 and i % 5 == 0
-    puts str
+    str = []
+    str << "Fizz" if i % 3 == 0
+    str << "Buzz" if i % 5 == 0
+    str << i if str.empty?
+    puts str.join(' ')
   end
 else
   puts "数値以外は入力しないでください"
