@@ -6,9 +6,9 @@ def fizzbuzz(num)
   return str.join(" ")
 end
 
-print "input max num\n"
+puts "input max num"
 max_num = gets.to_i
-print "fizz buzz start to #{max_num}\n"
+puts "fizz buzz start to #{max_num}"
 1.upto(max_num) do |num|
   puts fizzbuzz(num)
 end
