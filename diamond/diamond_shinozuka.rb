@@ -13,11 +13,10 @@ class Diamond
   end
 
   def self.set_line(char, width, i)
-    form = ""
-    form << char
-    form << (' ' * (i * 2 - 1) + char) unless i == 0 or i == width
-    line = form.center(width)
-    return line
+    line = ""
+    line << char
+    line << (' ' * (i * 2 - 1) + char) unless i == 0 or i == width
+    return line.center(width)
   end
 end
 
